@@ -1,0 +1,52 @@
+# Installation d’Alpine Linux
+
+## **Démarrage et accès au shell root**
+Quand on démarre Alpine depuis l’ISO, on arrive directement sur une invite de connexion. Taper `root` aucun mot de passe ne sera demandé.
+
+- Alpine est une distribution minimaliste orientée serveurs/conteneurs : l’ISO sert seulement d’initialisateur.
+- Le système n’est pas encore installé → pas de comptes → root temporairement accessible.
+
+![[Pasted image 20251122091618.png]]
+
+## **Lancer l’assistant d’installation**
+
+```sh
+setup-alpine
+```
+Ce script configure automatiquement les éléments essentiels.
+Paramètres recommandés :
+
+| Paramètre                 | Valeur                         | Pourquoi ce choix ?                                                                                                         |
+| ------------------------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| **Keymap**                | `fr`                           | Définit le clavier en français dès l’installation, évite les erreurs de saisie (accents, symboles, mot de passe).           |
+| **Keyboard layout**       | `fr-nodeadkeys`                | Version française du clavier AZERTY.                                                                                        |
+| **Hostname**              | `alpine-TP`                    | Donne un nom clair à la machine, utile pour l’administration et les logs.                                                   |
+| **Interface réseau**      | `eth0 : dhcp` et `eth1 : dhcp` | Les IP seront configurées plus tard une fois le système en place.                                                           |
+| **Root password**         | `root` (temporaire)            | Mot de passe simple pour le TP ; sera changé ou désactivé ensuite pour la sécurité.                                         |
+| **Timezone**              | `Europe/Paris`                 | Assure des horodatages cohérents pour les logs et l’heure du système.                                                       |
+| **Proxy**                 | `none`                         | Aucun proxy nécessaire en environnement local/TP.                                                                           |
+| **Network Time Protocol** | `chrony`                       | Service NTP léger et fiable pour synchroniser l’horloge du système — essentiel pour la sécurité, les certificats, les logs. |
+| **APK mirror**            | `f` (trouver le plus rapide)   | Sélection automatique du miroir le plus rapide → installation et mises à jour plus rapides.                                 |
+| **User**                  | `user`                         | Crée un utilisateur classique (principe de moindre privilège), indispensable pour ne travailler en root.                    |
+| **SSH server**            | `openssh`                      | Permet la connexion distante et facilite le travail depuis le poste hôte (copier/coller, multitâche, etc.).                 |
+| **Disk & Install**        | `sda`, `sys`, `y`              | Installation complète sur le disque `sda`, le mode _sys_ crée une partition classique avec persistance.                     |
+> [!warning] **A FAIRE IMPERATIVEMENT **
+> **Retirez l’ISO Alpine du lecteur CD dans la VM**
+> 
+> Dans VirtualBox :
+> 1. VM éteinte  
+> 2. Configuration → Stockage  
+> 3. Dans « Contrôleur IDE » ou « SATA » :  
+>     - sélectionnez le lecteur CD  
+>     - cliquez sur la petite icône du CD (à gauche)  
+>     - choisissez **Retirer le disque virtuel**
+
+> [!NOTE] Note
+> **Si vous sautez cette étape (ou si vous ne la validez pas),** **votre VM bootera très probablement en m****ode “Live CD” appelé** **aussi** **“diskless mode”** **(sans disque dur)****. Ce que signifie** **que** **:**
+> - **Aucune donnée** **n****e sera sauvegardé**
+> -  **Aucun disque n’est utilisé**
+> - **Toutes vos modifications seront** **stockées** **uniquement** **en RAM**
+> 
+> Si vous commencez travailler sur votre Distribution sans avoir fixé ces réglages, dites adieu à votre travail … et le pire c’est que maintenant vous savez pourquoi.
+
+Une fois cette procédure terminée , redémarrez la VM.
