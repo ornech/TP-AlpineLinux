@@ -1,0 +1,141 @@
+# **Qu’est-ce qu’un PID ?**
+
+> [!summary] PID
+> Un _PID_ est un **Process Identifier**, c’est-à-dire un numéro unique donné à chaque programme en cours d’exécution.
+
+> [!cite] Documentation officielle : 
+> [https://man7.org/linux/man-pages/man5/proc.5.html](https://man7.org/linux/man-pages/man5/proc.5.html)  
+(section : `/proc/[pid]`)
+
+
+# **Pourquoi le PID 1 est spécial ?**
+
+Lorsque Linux démarre, il doit lancer un premier programme qui est chargé de démarrer tout le reste : ce programme reçoit automatiquement le numéro **1**.
+
+Ce programme est appelé **init** (_initialization system_).
+
+> [!cite] Documentation officielle du noyau Linux (init) :  
+> [https://www.kernel.org/doc/html/latest/admin-guide/init.html](https://www.kernel.org/doc/html/latest/admin-guide/init.html)
+
+## Rôle de PID 1
+
+- Il lance **tous les autres services** de la machine.
+- Il adopte **tous les processus orphelins** (processus dont le parent est mort).
+- Il gère les commandes système comme `shutdown`, `reboot`, `poweroff`.
+
+
+> [!cite] Fonctionnement du PID 1
+> [https://www.kernel.org/doc/Documentation/admin-guide/sysctl/kernel.txt](https://www.kernel.org/doc/Documentation/admin-guide/sysctl/kernel.txt)  
+> (section : `pid_max` et rôles des processus)
+
+---
+
+[[Démarrage du système]]
+
+# 4) Les différences entre distributions : OpenRC vs systemd
+
+Selon la distribution, le PID 1 n’est **pas le même programme**.
+
+---
+
+## 🟦 **Sur Alpine Linux : PID 1 = OpenRC init (simple et léger)**
+
+OpenRC est un système d'initialisation **léger**, **lisible**, **non-intrusif**.  
+Il respecte très fortement la philosophie Unix :
+
+> « un programme = une tâche ».
+
+📌 Documentation officielle OpenRC :  
+[https://github.com/OpenRC/openrc/blob/master/README.md](https://github.com/OpenRC/openrc/blob/master/README.md)
+
+### Conséquence :
+
+→ PID 1 ne fait _qu’une seule chose_ : **lancer et superviser les services**.
+
+Exemple sur Alpine :
+
+```
+ps -p 1 -o pid,cmd
+```
+
+donnera :
+
+```
+1 /sbin/init
+```
+
+---
+
+## 🟥 **Sur Ubuntu : PID 1 = systemd (gros, multifonction)**
+
+Ubuntu utilise **systemd**, un système d'initialisation **très complet**, qui regroupe énormément de fonctionnalités dans un seul composant.
+
+📌 Documentation systemd officielle :  
+[https://www.freedesktop.org/wiki/Software/systemd/](https://www.freedesktop.org/wiki/Software/systemd/)
+
+### systemd fait plusieurs rôles à la fois :
+
+- gestion des services (`systemctl`)
+    
+- gestion du journal système (journald)
+    
+- gestion des timers (planification)
+    
+- gestion des montages (fstab)
+    
+- gestion des sessions utilisateur
+    
+- gestion du réseau (networkd)
+    
+
+➡️ Il s’éloigne de la philosophie Unix.  
+➡️ Beaucoup de fonctionnalités sont intégrées dans le PID 1.
+
+Exemple :
+
+```
+ps -p 1 -o pid,cmd
+```
+
+donnera :
+
+```
+1 /lib/systemd/systemd
+```
+
+---
+
+# 5) Pourquoi PID 1 ne peut JAMAIS mourir ?
+
+Le **PID 1 est vital**.  
+Le noyau Linux lui donne un statut spécial :
+
+- Si PID 1 se termine → **kernel panic** (plantage fatal du système)
+    
+- Aucun autre processus ne peut se substituer à PID 1
+    
+- Toute la hiérarchie des processus dépend de lui
+    
+
+📌 Comportement documenté dans le kernel :  
+[https://man7.org/linux/man-pages/man7/signal.7.html](https://man7.org/linux/man-pages/man7/signal.7.html)  
+(section « Signal Behavior of Init Process »)
+
+---
+
+# 6) Le rôle du PID 1 dans la hiérarchie des processus
+
+### ✔ Tous les processus ont un parent sauf PID 1
+
+→ PID 1 est **la racine**.
+
+### ✔ Si un parent meurt
+
+→ Le noyau rattache l’orphelin à PID 1 (adoption automatique).
+
+📌 Documentation kernel :  
+[https://www.kernel.org/doc/html/latest/core-api/pid.html](https://www.kernel.org/doc/html/latest/core-api/pid.html)
+
+---
+
+

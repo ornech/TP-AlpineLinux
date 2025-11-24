@@ -1,0 +1,248 @@
+# Introduction
+
+Alpine Linux utilise **apk** (_Alpine Package Keeper_) pour installer, mettre à jour et supprimer des logiciels.  
+Pour fonctionner correctement, apk repose sur **trois notions complémentaires** :
+
+> [!cite] **Concepts essentiels**  
+> **Mirror** : le **serveur** où sont stockés les paquets.  
+> **Repository** : la **catégorie** de paquets (main, community, testing).  
+> **Release** : une **version stable** d’Alpine rassemblant des repositories cohérents.
+
+## 1. Mirror — _où sont les paquets ?_
+
+Un **mirror** est un serveur contenant les paquets et leurs index.  
+apk télécharge tout depuis cette adresse.
+
+Exemples :
+
+```
+https://dl-cdn.alpinelinux.org/
+https://mirror.example.org/alpine/
+```
+
+## 2. Repository — _comment sont organisés les paquets ?_
+
+Un **repository** est une **catégorie** de paquets classée par niveau de stabilité:
+- **main** → paquets officiels, testés, stables
+- **community** → paquets fiables issus de la communauté
+- **testing** → paquets expérimentaux (uniquement sur _edge_    
+
+> [!NOTE]  
+> **testing = instable.** Pas destiné à la production.
+
+---
+
+## 3. Release — _quelle version d’Alpine ?_
+
+Une **release** est un ensemble cohérent de packages : noyau, outils système et bibliothèques **tous compilés ensemble**.
+
+Deux familles de releases :
+- **stable** : `v3.18`, `v3.19`, `v3.20`  
+    → versions figées, mises à jour tous les 6 mois
+- **edge** : rolling release  
+    → mise à jour continue, réservée au développement
+
+> [!WARNING]  
+> Les repositories d’une release ne sont **pas compatibles** avec ceux d’une autre.  
+> **Ne jamais mélanger :**  
+> `v3.20/main` + `edge/main`
+> 
+> Source Alpine :  
+> _“Do not enable Main/Community from stable and edge at the same time. Mixing can break your system.”_
+
+## 4. Politique Alpine : une seule version par paquet
+
+Alpine applique un modèle minimaliste :
+- seul le **dernier** build d’un paquet est conservé (_rolling repository_)
+- les anciennes versions disparaissent    
+- objectif : simplicité, sécurité, stockage minimal
+
+**Conséquence :**  
+Impossible de reconstruire à l’identique une VM plusieurs mois après si le paquet a été remplacé.
+
+## 5. Cohérence technique d’une release
+Tous les paquets d’une release sont compilés avec :
+- la même version de **musl**
+- les mêmes bibliothèques de base
+- les mêmes options de compilation
+- la même **ABI** (Application Binary Interface)
+
+> [!cite] **ABI**  
+> L’ABI définit le protocole binaire entre un programme compilé et les bibliothèques (registres, pile, symboles…).  
+> Si l’ABI change, un programme compilé pour l’ancienne **ne fonctionne plus** correctement :  
+> il ne parle plus le **même protocole binaire**.
+
+---
+
+## 6. Exercices à rendre
+
+> [!help] **Question 1**  
+> Que se passe-t-il si apk installe un paquet compilé pour une autre release que celle de votre système ?
+
+> [!help] **Question 2**  
+> Que se passe-t-il si vous activez un repository d’une autre release ?
+
+> [!info] **Consigne**  
+> Votre réponse doit obligatoirement comporter :
+> - **URL** (documentation Alpine)
+> - **extrait cité**
+> - **votre explication**
+>  
+> Sources officielles :
+>1. Repositories — [https://wiki.alpinelinux.org/wiki/Repositories](https://wiki.alpinelinux.org/wiki/Repositories)
+>2. apk — [https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html](https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html)
+>3. apk-tools — [https://gitlab.alpinelinux.org/alpine/apk-tools](https://gitlab.alpinelinux.org/alpine/apk-tools)
+
+# Alpine Linux – Commandes essentielles
+
+apk fournit un ensemble de commandes simples pour gérer les paquets.  
+Voici les opérations indispensables à maîtriser.
+## 1. Mise à jour de la liste des paquets
+
+``` bash
+apk update
+```
+
+Met à jour l’index des paquets présents dans les repositories que vous avez configuré.
+
+```
+apk update
+```
+
+> [!NOTE]  
+> À exécuter avant toute installation, surtout après modification de `/etc/apk/repositories`.
+
+## 2. Installer un paquet
+``` bash
+apk add nginx
+apk add nano openssh-server
+```
+
+Télécharge et installe :
+- le paquet
+- ses dépendances
+- les fichiers de configuration par défaut
+    
+> [!WARNING]  
+> apk n’installe **que ce qui existe** dans les repositories de votre release.  
+> Si le paquet n’existe plus → erreur (politique Alpine).
+
+## 3. Supprimer un paquet
+
+```
+apk del nano
+```
+
+> [!NOTE] *Note*
+> Contrairement aux distribution "Debian like" il n’existe **pas** d’équivalent à `apt purge` avec Alpine Linux. Alpine considère que seul un administrateur peut déterminer si un fichier de configuration doit être conservé ou non.
+
+> [!cite] Handbook Alpine Linux
+> Dans le Handbook (section _Working with apk → Removing packages_) :
+ > Source [https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html](https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html)
+ > 
+> *"Désinstalle le paquet **sans toucher aux fichiers modifiés** dans `/etc`."*
+
+## 4. Rechercher un paquet dans les dépôts
+
+```
+apk search nginx
+apk search openssh
+```
+
+> [!NOTE]  
+> Recherche uniquement dans les repositories configurés localement.
+
+## 5. Afficher les informations sur un paquet
+
+```
+apk info nginx
+```
+
+Retourne :
+- version
+- description
+- dépendances
+- fichiers installés
+- licence
+
+Pour voir les fichiers installés :
+```
+apk info -L openssh-server
+```
+
+## 6. Lister les paquets installés
+
+```
+apk info
+```
+
+Liste **tous** les paquets installés.
+
+## 7. Mettre à jour les paquets installés
+```
+apk upgrade
+```
+
+Met à jour tous les paquets installés vers les versions disponibles sur les repositories configurés.
+
+> [!DANGER]  
+> Sur Alpine _stable_, un `apk upgrade` peut :
+> 
+> - casser la compatibilité d’une VM construite plusieurs mois plus tôt
+>     
+> - rendre impossible la réinstallation d’un ancien paquet
+>     
+> 
+> À n’utiliser **que si vous maitrisez les impacts de changement de version pour vos applications**.
+
+## 9. Vérifier l’intégrité des paquets installés
+
+```
+apk audit
+```
+
+Détecte les inconsistances :
+- fichiers modifiés
+- fichiers orphelins
+- dépendances manquantes
+
+## 10. Nettoyer l’espace disque
+
+```
+apk cache clean
+```
+
+Supprime les fichiers téléchargés du cache local.
+
+## 12. Exemple complet
+
+### **Installer Nginx, vérifier, lister, puis désinstaller**
+
+```
+apk update
+apk add nginx
+apk info nginx
+apk info -L nginx
+apk del nginx
+```
+
+---
+
+# ## Exercices à rendre (SIO1)
+
+> [!help] **Exercice 1**  
+> Cherchez quel paquet installe la commande `ssh-keygen`.  
+> Donnez :
+> - la commande utilisée
+> - le paquet trouvé    
+> - sa version    
+> - extrait de `apk info`
+
+> [!help] **Exercice 2**  
+> Installez `nginx`, listez ses fichiers, puis supprimez-le proprement.
+
+> [!help] **Exercice 3**  
+> Expliquez, documentation à l’appui, ce que fait `apk upgrade`.  
+> Source obligatoire :  
+> [https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html](https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html)
+[[Automatisation des tâches]]

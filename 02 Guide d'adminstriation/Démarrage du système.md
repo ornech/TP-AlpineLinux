@@ -1,0 +1,33 @@
+## Démarrage du système
+
+## a) Le BIOS/UEFI démarre
+
+Le **BIOS** (ancien firmware) ou **UEFI** (version moderne) est le micro-logiciel intégré à la carte mère.  
+Il initialise le matériel essentiel (CPU, RAM, bus, périphériques), exécute les tests de démarrage, puis recherche un support bootable et **transfère la main au chargeur de démarrage**.
+
+> [!NOTE] Prépare la machine pour qu’un système d’exploitation puisse se lancer._
+
+
+## b) Le bootloader est exécuté
+
+Le **bootloader** (comme GRUB) est chargé par le BIOS/UEFI.  
+Il **charge le noyau Linux en mémoire**, charge l’éventuel **initramfs**, prépare les **paramètres de démarrage**, puis **rend le contrôle du CPU au noyau**, qui prend ensuite la main.
+
+> [!note] Il établit le lien entre le firmware et le noyau.
+
+ > [!cite] **initramfs** 
+> `initramfs` signifie _initial RAM filesystem_. C’est un **mini-système de fichiers temporaire**, chargé en mémoire **par GRUB**, et utilisé **par le noyau immédiatement après son lancement**, avant que le vrai système de fichiers (rootfs) ne soit disponible.
+
+## c) Le noyau Linux s’initialise
+
+Le **noyau Linux** prend le contrôle du CPU.  
+Il détecte le matériel (mémoire, processeurs, bus, périphériques), configure les gestionnaires internes (mémoire, processus, pilotes essentiels), monte l’initramfs, puis prépare l’environnement pour lancer le premier processus.
+
+> [!NOTE] Il met en place toutes les bases techniques du système.
+
+---
+
+## d) Le noyau lance /sbin/init (PID 1)
+
+Une fois son initialisation terminée, le noyau exécute **/sbin/init**, qui devient **le premier processus utilisateur (PID 1)**.  
+Ce programme démarre les services, supervise les processus du système et lance l’environnement complet de la distribution (OpenRC, systemd, etc.).

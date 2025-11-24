@@ -3,7 +3,7 @@
 ## **Démarrage et accès au shell root**
 Quand on démarre Alpine depuis l’ISO, on arrive directement sur une invite de connexion. Taper `root` aucun mot de passe ne sera demandé.
 
-- Alpine est une distribution minimaliste orientée serveurs/conteneurs : l’ISO sert seulement d’initialisateur.
+- Alpine est une distribution minimaliste orientée serveurs/conteneurs : l’ISO sert uniquement d'installeur.
 - Le système n’est pas encore installé → pas de comptes → root temporairement accessible.
 
 ![[Pasted image 20251122091618.png]]
@@ -42,10 +42,11 @@ Paramètres recommandés :
 >     - choisissez **Retirer le disque virtuel**
 
 > [!NOTE] Note
-> **Si vous sautez cette étape (ou si vous ne la validez pas),** **votre VM bootera très probablement en m****ode “Live CD” appelé** **aussi** **“diskless mode”** **(sans disque dur)****. Ce que signifie** **que** **:**
-> - **Aucune donnée** **n****e sera sauvegardé**
-> -  **Aucun disque n’est utilisé**
-> - **Toutes vos modifications seront** **stockées** **uniquement** **en RAM**
+> Si vous sautez cette étape (ou si vous ne la validez pas), votre VM bootera très probablement en mode “**Live CD**” appelé aussi “diskless mode” (sans disque dur). 
+> Ce que signifie que :
+> - Aucune donnée ne sera sauvegardé
+> -  Aucun disque n’est utilisé
+> - Toutes vos modifications seront stockées uniquement en RAM
 > 
 > Si vous commencez travailler sur votre Distribution sans avoir fixé ces réglages, dites adieu à votre travail … et le pire c’est que maintenant vous savez pourquoi.
 
