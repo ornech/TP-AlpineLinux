@@ -1,11 +1,13 @@
-site_name: TP Alpine Linux
-site_description: "Travaux pratiques Alpine Linux – BTS SIO SISR"
+site_name: TP Alpine
+site_description: "TP Alpine Linux – BTS SIO SISR"
 site_url: https://ornech.github.io/TP-AlpineLinux/
+site_author: "Ornech Jean-François"
+
 
 repo_url: https://github.com/ornech/TP-AlpineLinux
 repo_name: "ornech/TP-AlpineLinux"
 
-docs_dir: doc
+docs_dir: docs
 
 theme:
   name: readthedocs
