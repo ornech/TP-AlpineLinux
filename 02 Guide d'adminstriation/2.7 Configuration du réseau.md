@@ -1,0 +1,81 @@
+# Configuration du réseau sous Alpine
+
+## 1. Architecture & principes
+
+- Alpine Linux utilise par défaut le gestionnaire d’interfaces réseau ifupdown‑ng (via le package alpine-conf) pour gérer les interfaces réseau [^1]
+- Les scripts de configuration réseau sont fournis dans le package alpine-conf et incluent : 
+	- [setup-hostname](https://wiki.alpinelinux.org/wiki/Configure_Networking)
+	- [setup-interfaces](https://wiki.alpinelinux.org/wiki/Configure_Networking#setup-interfaces)
+	- [setup-dns](https://wiki.alpinelinux.org/wiki/Alpine_setup_scripts#setup-dns)
+	- [setup-proxy](https://wiki.alpinelinux.org/wiki/Alpine_setup_scripts#setup-proxy)
+	- [setup-ntp](https://wiki.alpinelinux.org/wiki/Alpine_setup_scripts#setup-ntp)
+- Le système d’init est OpenRC, et le service réseau est géré via les scripts d’OpenRC (ex. `/etc/init.d/networking`).
+
+# Configuration de base du réseau
+## Solution 1: `setup-interfaces`
+Ce script permet de configurer des interfaces Ethernet, Wi-Fi, bridge, bond ou VLAN, et suffit pour la majorité des configurations.
+Lancez
+``` bash
+setup-interfaces
+```
+Le script va détecter les interfaces disponibles (ex. eth0, wlan0), puis demander pour chaque interface le type de configuaration souhaité (IP statique ou DHCP)
+
+> [!quote] Information
+> Vous devez bien évidement avoir anticipé un plan d'adressage IP.
+> 
+> *"Quand tu mets une IP au hasard, c’est comme envoyer un message à la mauvaise personne : ça fait souvent des histoires. * 😉"
+
+## Solution 2: éditer le fichier interfaces`
+Editez le fichier `/etc/network/interfaces`
+```
+nano /etc/network/interfaces
+```
+Exemple IP static:
+```
+auto eth1
+iface eth1 inet static
+    address 192.168.56.20
+    netmask 255.255.255.0
+    gateway 192.168.56.1
+```
+Exemple IP Dynamique:
+```
+auto eth1
+iface eth1 inet dhcp
+```
+Redémarrez le service `networking`
+```bash
+rc-service networking restart
+```
+Vérifiez voter configuration réseau
+```sh
+ip a
+```
+Testez la connexion vers votre hôte
+```sh
+ping 192.168.56.1
+```
+Testez la connexion vers internet
+```sh
+ping perdu.com
+```
+## Dépannage réseau
+
+> [!bug] Procédure dépannage
+> 1. VirtualBox -> 2 interfaces réseaux : `réseau NAT` et `Réseau d'hôte privé`
+> 2. VirtualBox -> "cables branchés"
+> 3. `ip link` → interface UP ? 
+> 4. `ip a` → IP et masque correcte ?
+> 5. `ip route` → gateway correcte  (192.168.56.1)?
+> 6. `ping 192.168.56.1` → LAN OK ?
+> 7. `ping 8.8.8.8` → Internet OK ?
+> 8. `ping google.fr` → DNS OK ?
+> 9. `nslookup google.fr` → DNS détails
+> 10. `nc -vz google.fr 443` → port OK ?
+> 11. `ss -ltnp`→ service écoute ?
+> 12. `iptables -L -n`→ firewall ?
+> 13. `tcpdump -i eth0` → sniff si nécessaire
+
+
+
+[^1]: https://wiki.alpinelinux.org/wiki/Configure_Networking
