@@ -1,28 +1,48 @@
-name: deploy
+name: Deploy MkDocs site
+
 on:
   push:
     branches:
       - master
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.x
-      - run: pip install mkdocs-material
-      - run: mkdocs build
-      - uses: actions/upload-pages-artifact@v2
+          python-version: '3.x'
+
+      - name: Install MkDocs and theme
+        run: |
+          pip install mkdocs-material
+
+      - name: Build MkDocs
+        run: |
+          mkdocs build --clean
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: site/
+          path: ./site
 
   deploy:
-    needs: build
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/deploy-pages@v2
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
