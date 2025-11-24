@@ -1,0 +1,35 @@
+site_name: TP Alpine Linux
+site_description: "Travaux pratiques Alpine Linux – BTS SIO SISR"
+site_url: https://ornech.github.io/TP-AlpineLinux/
+
+repo_url: https://github.com/ornech/TP-AlpineLinux
+repo_name: "ornech/TP-AlpineLinux"
+
+docs_dir: .
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - toc.integrate
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.tasklist
+
+plugins:
+  - search
