@@ -5,7 +5,7 @@ site_url: https://ornech.github.io/TP-AlpineLinux/
 repo_url: https://github.com/ornech/TP-AlpineLinux
 repo_name: "ornech/TP-AlpineLinux"
 
-docs_dir: .
+docs_dir: doc
 
 theme:
   name: material
