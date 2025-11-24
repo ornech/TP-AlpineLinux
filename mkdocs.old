@@ -1,0 +1,41 @@
+site_name: TP Alpine
+site_description: "TP Alpine Linux – BTS SIO SISR"
+site_url: https://ornech.github.io/TP-AlpineLinux/
+site_author: "Ornech Jean-François"
+
+
+repo_url: https://github.com/ornech/TP-AlpineLinux
+repo_name: "ornech/TP-AlpineLinux"
+
+docs_dir: site_docs
+theme:
+  name: readthedocs
+  navigation_depth: 1
+  language: fr
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - toc.integrate
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.tasklist
+
+plugins:
+  - search
+
+extra_css:
+  - css/custom.css
+

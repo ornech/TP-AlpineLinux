@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Installer les paquets “utiles”.md",
+                "file": "docs/01 Installation/1.1 Installation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Installer les paquets “utiles”"
+              "title": "1.1 Installation"
             }
           }
         ],
@@ -263,14 +263,22 @@
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
       "bases:Create new base": true,
-      "obsidian-git:Open Git source control": false,
-      "mermaid-tools:Open Mermaid Toolbar": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ef0ee1444e0442b0",
+  "active": "6748da64898f94e0",
   "lastOpenFiles": [
     "mkdocs.yml",
+    "1.1 Installation.yml",
+    "mkdocs.old",
+    "css/custom.css",
+    "css",
+    "tools/convert_obsidian_callouts.py",
+    "site_docs",
+    "tools/1.1 Installation.py",
+    "tools",
+    "1.1 Installation.py",
+    "docs/01 Installation/1.0 Création de la machine virtuelle.md",
     "02 Guide d'adminstriation/2.1.1 Gestion des services avec OpenRC.md",
     "02 Guide d'adminstriation/2.1 Démarrage du système.md",
     "01 Installation/1.6 Configurer SSH.md",
@@ -300,11 +308,7 @@
     "Ressources/1.0 Environnement TP labo.png",
     "Ressources/Pasted image 20251122091618.png",
     "02 Guide d'adminstriation",
-    "01 Installation",
-    "03 Hardening (durcissement)",
     "Excalidraw/Drawing 2025-11-22 19.40.29.excalidraw.md",
-    "Excalidraw",
-    "00 - Présentation.png",
-    "Sans titre.base"
+    "00 - Présentation.png"
   ]
 }
