@@ -268,6 +268,10 @@
   },
   "active": "6748da64898f94e0",
   "lastOpenFiles": [
+    "docs/index.md",
+    "site_docs/custom.css",
+    "docs/css/custom.css",
+    "docs/css",
     "mkdocs.yml",
     "1.1 Installation.yml",
     "mkdocs.old",
@@ -275,9 +279,6 @@
     "css",
     "tools/convert_obsidian_callouts.py",
     "site_docs",
-    "tools/1.1 Installation.py",
-    "tools",
-    "1.1 Installation.py",
     "docs/01 Installation/1.0 Création de la machine virtuelle.md",
     "02 Guide d'adminstriation/2.1.1 Gestion des services avec OpenRC.md",
     "02 Guide d'adminstriation/2.1 Démarrage du système.md",
@@ -307,7 +308,6 @@
     "Ressources/00 - Présentation.png",
     "Ressources/1.0 Environnement TP labo.png",
     "Ressources/Pasted image 20251122091618.png",
-    "02 Guide d'adminstriation",
     "Excalidraw/Drawing 2025-11-22 19.40.29.excalidraw.md",
     "00 - Présentation.png"
   ]

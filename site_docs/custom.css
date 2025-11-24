@@ -1,0 +1,18 @@
+body {
+    --primary: #004080;
+    --secondary: #e6f0ff;
+}
+
+.navbar-default {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+    color: white !important;
+}
+
+.sidebar {
+    background: #f8f9fa;
+}

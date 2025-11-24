@@ -1,76 +1,28 @@
 site_name: TP Alpine Linux
+site_description: Documentation du TP Alpine Linux
 site_url: https://ornech.github.io/TP-AlpineLinux/
-repo_url: https://github.com/ornech/TP-AlpineLinux
-repo_name: ornech/TP-AlpineLinux
+
+docs_dir: site_docs
+site_dir: site
 
 theme:
-  name: material
-  language: fr
-  palette:
-    - scheme: default
-      primary: blue
-      accent: amber
-      toggle:
-        icon: material/weather-night
-        name: Passer au mode sombre
-    - scheme: slate
-      primary: blue
-      accent: amber
-      toggle:
-        icon: material/weather-sunny
-        name: Passer au mode clair
+  name: mkdocs
+  theme: flatly
+  locale: fr
 
-  features:
-    - navigation.instant
-    - navigation.indexes
-    - navigation.sections
-    - navigation.path
-    - navigation.top
-    - navigation.tabs
-    - header.autohide
-    - toc.follow
-    - content.code.copy
-    - content.code.annotate
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/ornech
-
-nav:
-  - 00 Présentation: "docs/00 - Présentation.md"
-  - Installer les paquets “utiles”: "docs/Installer les paquets “utiles”.md"
-  - 01 Installation:
-      - 1.0 Création de la machine virtuelle: "docs/01 Installation/1.0 Création de la machine virtuelle.md"
-      - 1.1 Installation d'Alpine Linux: "docs/01 Installation/1.1 Installation.md"
-      - 1.2 Configuration du réseau: "docs/01 Installation/1.2 Configuration du réseau.md"
-      - 1.3 Utilisateurs & permissions: "docs/01 Installation/1.3 Utilisateurs & permissions.md"
-      - 1.4 Arborescence minimale: "docs/01 Installation/1.4 Arborescence minimale.md"
-      - 1.6 Configurer SSH: "docs/01 Installation/1.6 Configurer SSH.md"
-
-  - 02 Guide d'administration:
-      - 2.1 Démarrage du système: "docs/02 Guide d'administration/2.1 Démarrage du système.md"
-      - Gestion des services OpenRC:
-          - Rôle d’OpenRC: "docs/02 Guide d'administration/Rôle d’OpenRC.md"
-          - Qu’est-ce qu’un PID ?: "docs/02 Guide d'administration/Qu’est-ce qu’un PID .md"
-          - Utilitaire de configuration Alpine Linux: "docs/02 Guide d'administration/2.10 Utilitaire de configuration Alpine Linux.md"
-          - Systèmes de fichiers: "docs/02 Guide d'administration/Systèmes de fichiers.md"
-          - Journalisation sous Alpine: "docs/02 Guide d'administration/Journalisation.md"
-          - Automatisation des tâches: "docs/02 Guide d'administration/2.6 Automatisation des tâches.md"
-          - Configuration réseau: "docs/02 Guide d'administration/Configuration du réseau.md"
-
-  - 03 Hardening (durcissement):
-      - 3.1 Hardening checklist: "docs/03 Hardening (durcissement)/Checklist.md"
+plugins:
+  - search
+  - awesome-pages
 
 markdown_extensions:
   - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
-  - pymdownx.highlight
-  - pymdownx.emoji
-  - pymdownx.tilde
-  - pymdownx.tasklist
-  - attr_list
   - toc:
       permalink: true
+  - fenced_code
+  - codehilite
+  - tables
+  - footnotes
+  - def_list
+
+extra_css:
+  - styles.css

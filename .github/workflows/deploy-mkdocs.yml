@@ -24,7 +24,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install Python dependencies
-        run: pip install mkdocs mkdocs-material mkdocs-rtd-dropdown
+        run: pip install mkdocs mkdocs-bootswatch mkdocs-awesome-pages-plugin
 
       - name: Convert Obsidian callouts → MkDocs
         run: python3 tools/convert_obsidian_callouts.py
