@@ -8,7 +8,7 @@ repo_name: "ornech/TP-AlpineLinux"
 docs_dir: doc
 
 theme:
-  name: material
+  name: readthedocs
   language: fr
   features:
     - navigation.instant
