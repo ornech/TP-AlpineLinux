@@ -1,48 +1,78 @@
-name: Deploy MkDocs site
+site_name: TP Alpine Linux
+site_description: "Travaux pratiques Alpine Linux – Installation, administration, hardening pour BTS SIO SISR"
+site_url: https://ornech.github.io/TP-AlpineLinux/
 
-on:
-  push:
-    branches:
-      - master
-      - main
+repo_url: https://github.com/ornech/TP-AlpineLinux
+repo_name: "ornech/TP-AlpineLinux"
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+# On dit à MkDocs que les .md sont à la racine du repo
+docs_dir: .
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - navigation.instant
+    - navigation.indexes
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Basculer en mode sombre
+    - scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Basculer en mode clair
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
+markdown_extensions:
+  - admonition           # !!! note / !!! warning etc.
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
 
-      - name: Install MkDocs and theme
-        run: |
-          pip install mkdocs-material
+plugins:
+  - search
 
-      - name: Build MkDocs
-        run: |
-          mkdocs build --clean
+# Laisse MkDocs générer la navigation automatiquement (ordre alphabétique).
+# Quand tu voudras quelque chose de plus structuré, tu pourras décommenter
+# et ajuster la nav ci-dessous.
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./site
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+# nav:
+#   - Accueil:
+#       - "Présentation": "00 - Présentation.md"
+#       - "Installer les paquets utiles": "Installer les paquets “utiles”.md"
+#   - Installation:
+#       - "1.1 – Installation de base": "01 Installation/1.1 Installation.md"
+#       - "1.2 – Configuration du réseau": "01 Installation/1.2 Configuration du réseau.md"
+#       - "1.4 – Arborescence minimale": "01 Installation/1.4 Arborescence minimale.md"
+#       - "1.5 – Services avec OpenRC": "01 Installation/1.5 Services avec OpenRC.md"
+#   - Guide d’administration:
+#       - "Vue d’ensemble": "02 Guide d'adminstriation/00 - Introduction.md"
+#       # etc.
+#   - Hardening:
+#       - "Vue d’ensemble": "03 Hardening (durcissement)/00 - Introduction.md"
+#       # etc.
