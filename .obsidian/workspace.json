@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02 Guide d'adminstriation/2.2 Les services avec OpenRC.md",
+                "file": "docs/02 TP Adminstriation/2.5 - TP Logging & journalisation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.2 Les services avec OpenRC"
+              "title": "2.5 - TP Logging & journalisation"
             }
           },
           {
@@ -138,7 +138,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#BIOS/UEFI",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -159,11 +159,12 @@
               "title": "Signets"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 297.5
+    "width": 359.5
   },
   "right": {
     "id": "00b1e3aa215a6797",
@@ -241,13 +242,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Installer les paquets “utiles”.md",
+                "file": "docs/02 TP Adminstriation/2.5 - TP Logging & journalisation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de Installer les paquets “utiles”"
+              "title": "Plan de 2.5 - TP Logging & journalisation"
             }
           },
           {
@@ -280,16 +281,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d25a1a7d094dd214",
+  "active": "ef0ee1444e0442b0",
   "lastOpenFiles": [
+    "docs/02 TP Adminstriation/2.2 TP Les services avec OpenRC.md",
+    "docs/Ressources/2.2 TP Les services avec OpenRC.png",
     "Ressources/2.2 Les services avec OpenRC.png",
+    "docs/02 TP Adminstriation/2.1 Démarrage du système.md",
+    "docs/02 TP Adminstriation/2.3 - Systèmes de fichiers.md",
+    "docs/02 TP Adminstriation/2.5 - TP Logging & journalisation.md",
+    "docs/02 TP Adminstriation/2.4 - Gestion des paquets.md",
+    "docs/02 TP Adminstriation/2.6 Automatisation des tâches.md",
+    "docs/02 TP Adminstriation/2.10 - Utilitaire de configuration Alpine Linux.md",
+    "docs/02 TP Adminstriation/2.7 Configuration du réseau.md",
+    "docs/02 Guide d'adminstriation/2.2 Les processus.md",
     "Ressources",
-    "docs/02 Guide d'adminstriation/2.1 Démarrage du système.md",
     "docs/01 Installation/1.5 Configurer SSH.md",
     "docs/01 Installation/1.0 Création de la machine virtuelle.md",
     "docs/01 Installation/1.3 Utilisateurs & groupes.md",
-    "docs/02 Guide d'adminstriation/2.2 Les processus.md",
-    "docs/02 Guide d'adminstriation/2.2 Les services avec OpenRC.md",
     "docs/01 Installation/1.4 Arborescence minimale.md",
     "docs/01 Installation/1.5 Outils minimun.md",
     "docs/01 Installation/1.2 Configuration du réseau.md",
@@ -312,12 +320,6 @@
     "02 Guide d'adminstriation/2.3 - Systèmes de fichiers.md",
     "02 Guide d'adminstriation/2.5 - Logging & journalisation.md",
     "02 Guide d'adminstriation/2.4 - Gestion des paquets (Alpine Package Keeper ).md",
-    "01 Installation/1.5 Services avec OpenRC.md",
-    "01 Installation/1.3 Utilisateurs & permissions.md",
-    "01 Installation/1.2 Configuration du réseau.md",
-    "01 Installation/1.1 Installation.md",
-    "02 Guide d'adminstriation/2.7 Configuration du réseau.md",
-    "01 Installation/1.0 Création de la machine virtuelle.md",
     "Ressources/1.0 Environnement TP labo-5.png",
     "Ressources/1.0 Environnement TP labo-5.png",
     "Ressources/1.0 Environnement TP labo-4.png",
@@ -325,8 +327,6 @@
     "Ressources/1.0 Environnement TP labo-2.png",
     "Ressources/1.0 Environnement TP labo-1.png",
     "Ressources/00 - Présentation.png",
-    "Ressources/1.0 Environnement TP labo.png",
-    "Ressources/Pasted image 20251122091618.png",
-    "00 - Présentation.png"
+    "Ressources/1.0 Environnement TP labo.png"
   ]
 }
