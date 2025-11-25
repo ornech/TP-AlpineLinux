@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01 Installation/1.0 Création de la machine virtuelle.md",
+                "file": "docs/02 Guide d'adminstriation/2.2 Les services avec OpenRC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.0 Création de la machine virtuelle"
+              "title": "2.2 Les services avec OpenRC"
             }
           },
           {
@@ -282,16 +282,18 @@
   },
   "active": "d25a1a7d094dd214",
   "lastOpenFiles": [
-    "docs/01 Installation/1.5 Configurer SSH.md",
-    "docs/01 Installation/1.3 Utilisateurs & groupes.md",
+    "Ressources/2.2 Les services avec OpenRC.png",
+    "Ressources",
     "docs/02 Guide d'adminstriation/2.1 Démarrage du système.md",
+    "docs/01 Installation/1.5 Configurer SSH.md",
+    "docs/01 Installation/1.0 Création de la machine virtuelle.md",
+    "docs/01 Installation/1.3 Utilisateurs & groupes.md",
     "docs/02 Guide d'adminstriation/2.2 Les processus.md",
-    "docs/02 Guide d'adminstriation/2.1.1 Gestion des services avec OpenRC.md",
+    "docs/02 Guide d'adminstriation/2.2 Les services avec OpenRC.md",
     "docs/01 Installation/1.4 Arborescence minimale.md",
     "docs/01 Installation/1.5 Outils minimun.md",
     "docs/01 Installation/1.2 Configuration du réseau.md",
     "docs/01 Installation/1.1 Installation.md",
-    "docs/01 Installation/1.0 Création de la machine virtuelle.md",
     "docs/index.md",
     "site_docs/custom.css",
     "docs/css/custom.css",
@@ -302,7 +304,6 @@
     "css/custom.css",
     "css",
     "tools/convert_obsidian_callouts.py",
-    "site_docs",
     "02 Guide d'adminstriation/2.1.1 Gestion des services avec OpenRC.md",
     "02 Guide d'adminstriation/2.1 Démarrage du système.md",
     "01 Installation/1.6 Configurer SSH.md",
@@ -317,7 +318,6 @@
     "01 Installation/1.1 Installation.md",
     "02 Guide d'adminstriation/2.7 Configuration du réseau.md",
     "01 Installation/1.0 Création de la machine virtuelle.md",
-    "Installer les paquets “utiles”.md",
     "Ressources/1.0 Environnement TP labo-5.png",
     "Ressources/1.0 Environnement TP labo-5.png",
     "Ressources/1.0 Environnement TP labo-4.png",
