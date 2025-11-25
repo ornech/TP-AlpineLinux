@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01 Installation/1.5 Configurer SSH.md",
+                "file": "docs/01 Installation/1.0 Création de la machine virtuelle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.5 Configurer SSH"
+              "title": "1.0 Création de la machine virtuelle"
             }
           },
           {
@@ -282,8 +282,8 @@
   },
   "active": "d25a1a7d094dd214",
   "lastOpenFiles": [
-    "docs/01 Installation/1.3 Utilisateurs & groupes.md",
     "docs/01 Installation/1.5 Configurer SSH.md",
+    "docs/01 Installation/1.3 Utilisateurs & groupes.md",
     "docs/02 Guide d'adminstriation/2.1 Démarrage du système.md",
     "docs/02 Guide d'adminstriation/2.2 Les processus.md",
     "docs/02 Guide d'adminstriation/2.1.1 Gestion des services avec OpenRC.md",
