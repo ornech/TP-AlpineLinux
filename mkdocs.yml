@@ -7,13 +7,14 @@ site_dir: site
 
 repo_url: https://github.com/ornech/TP-AlpineLinux
 # edit_uri: edit/master/docs/     # Dossier source réel à éditer
-edit_uri: issues/new?title=Problème%20sur%20la%20page:%20%s&body=Merci%20de%20décrire%20le%20problème.%0A%0APage:%20%s
+# edit_uri: issues/new?title=Problème%20sur%20la%20page:%20%s&body=Merci%20de%20décrire%20le%20problème.%0A%0APage:%20%s
 
 theme:
   name: mkdocs
   theme: cyborg
   locale: fr
   highlightjs: true # tester la coloration syntaxique avec Highlight.js
+  custom_dir: overrides
 
 plugins:
   - search
@@ -37,3 +38,4 @@ markdown_extensions:
 
 extra_css:
   - styles.css
+

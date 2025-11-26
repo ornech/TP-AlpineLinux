@@ -67,10 +67,14 @@
             "id": "62372389e663a084",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/02 TP Adminstriation/2.2 - Gestion des paquets.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "2.2 - Gestion des paquets"
             }
           },
           {
@@ -223,13 +227,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-11-26.canvas",
+                "file": "docs/02 TP Adminstriation/2.2 - Gestion des paquets.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de 2025-11-26"
+              "title": "Plan de 2.2 - Gestion des paquets"
             }
           },
           {
@@ -262,20 +266,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "712cc702b823f541",
+  "active": "62372389e663a084",
   "lastOpenFiles": [
-    "2025-11-26.md",
+    "overrides/nav.html",
+    "overrides/sidebar.html",
+    "docs/02 TP Adminstriation/2.1 TP Les services avec OpenRC.md",
+    "docs/02 TP Adminstriation/2.2 - Gestion des paquets.md",
+    "docs/02 TP Adminstriation/2.2 - Systèmes de fichiers.md",
+    "docs/02 TP Adminstriation/2.5 Automatisation des tâches.md",
+    "docs/02 TP Adminstriation/2.4 - TP Logging & journalisation.md",
+    "docs/02 TP Adminstriation/2.3 Configuration du réseau.md",
+    "docs/02 TP Adminstriation/2.99 - Utilitaire de configuration Alpine Linux.md",
+    "overrides/partials/sidebar.html",
+    "overrides/partials/nav.html",
+    "overrides/partials/footer.html",
+    "overrides/partials/2.2 - Gestion des paquets.html",
+    "overrides/partials",
+    "overrides",
+    "archives/2.1 Démarrage du système.md",
+    "archives",
     "2025-11-26.canvas",
-    "docs/02 TP Adminstriation/2.5 - TP Logging & journalisation.md",
-    "docs/02 TP Adminstriation/2.2 TP Les services avec OpenRC.md",
+    "2025-11-26.md",
     "docs/Ressources/2.2 TP Les services avec OpenRC.png",
     "Ressources/2.2 Les services avec OpenRC.png",
-    "docs/02 TP Adminstriation/2.1 Démarrage du système.md",
-    "docs/02 TP Adminstriation/2.3 - Systèmes de fichiers.md",
-    "docs/02 TP Adminstriation/2.4 - Gestion des paquets.md",
-    "docs/02 TP Adminstriation/2.6 Automatisation des tâches.md",
-    "docs/02 TP Adminstriation/2.10 - Utilitaire de configuration Alpine Linux.md",
-    "docs/02 TP Adminstriation/2.7 Configuration du réseau.md",
     "docs/02 Guide d'adminstriation/2.2 Les processus.md",
     "Ressources",
     "docs/01 Installation/1.5 Configurer SSH.md",
@@ -287,14 +300,6 @@
     "docs/01 Installation/1.1 Installation.md",
     "docs/index.md",
     "site_docs/custom.css",
-    "docs/css/custom.css",
-    "docs/css",
-    "mkdocs.yml",
-    "1.1 Installation.yml",
-    "mkdocs.old",
-    "css/custom.css",
-    "css",
-    "tools/convert_obsidian_callouts.py",
     "02 Guide d'adminstriation/2.1.1 Gestion des services avec OpenRC.md",
     "02 Guide d'adminstriation/2.1 Démarrage du système.md",
     "01 Installation/1.6 Configurer SSH.md",

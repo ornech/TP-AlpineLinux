@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block nav %}
+
+{{ super() }}
+
+<div style="margin-top:20px; padding:15px; border-top:1px solid #ccc;">
+    <a id="issue-btn" class="btn btn-primary" style="width:100%; font-weight:bold;" target="_blank">
+        🛠 Signaler une erreur
+    </a>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        let path = window.location.pathname;
+
+        path = path.replace(/^\/TP-AlpineLinux\//, "");
+        path = path.replace(/index\.html$/, "");
+        let md = (path.replace(/\/$/, "") || "index") + ".md";
+
+        const issueUrl =
+            "https://github.com/ornech/TP-AlpineLinux/issues/new" +
+            "?title=" + encodeURIComponent("Problème sur : " + md) +
+            "&body=" + encodeURIComponent("Page concernée : " + md);
+
+        document.getElementById("issue-btn").href = issueUrl;
+    });
+</script>
+
+{% endblock %}
