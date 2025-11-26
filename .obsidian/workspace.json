@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02 TP Adminstriation/2.2 - Gestion des paquets.md",
+                "file": "docs/02 TP Adminstriation/2.3 Gestion utilisateurs, groupes et droits.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.2 - Gestion des paquets"
+              "title": "2.3 Gestion utilisateurs, groupes et droits"
             }
           },
           {
@@ -227,13 +227,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/02 TP Adminstriation/2.2 - Gestion des paquets.md",
+                "file": "docs/02 TP Adminstriation/2.3 Gestion utilisateurs, groupes et droits.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de 2.2 - Gestion des paquets"
+              "title": "Plan de 2.3 Gestion utilisateurs, groupes et droits"
             }
           },
           {
@@ -268,15 +268,22 @@
   },
   "active": "62372389e663a084",
   "lastOpenFiles": [
+    "docs/02 TP Adminstriation/2.4 Gestion des droits.md",
+    "docs/02 TP Adminstriation/2.4 Systèmes de fichiers.md",
+    "docs/02 TP Adminstriation/2.3 Gestion utilisateurs, groupes et droits.md",
+    "docs/index.md",
+    "archives/index 1.md",
+    "docs/01 Installation/1.3 Utilisateurs & groupes.md",
+    "docs/01 Installation/1.2 Configuration du réseau.md",
+    "docs/01 Installation/1.1 Installation.md",
+    "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
+    "docs/02 TP Adminstriation/2.1 Les services avec OpenRC.md",
+    "docs/02 TP Adminstriation/2.7 Automatisation des tâches.md",
+    "docs/02 TP Adminstriation/2.6 - TP Logging & journalisation.md",
+    "docs/02 TP Adminstriation/2.5 Configuration du réseau.md",
+    "docs/02 TP Adminstriation/2.99 - Utilitaire de configuration Alpine Linux.md",
     "overrides/nav.html",
     "overrides/sidebar.html",
-    "docs/02 TP Adminstriation/2.1 TP Les services avec OpenRC.md",
-    "docs/02 TP Adminstriation/2.2 - Gestion des paquets.md",
-    "docs/02 TP Adminstriation/2.2 - Systèmes de fichiers.md",
-    "docs/02 TP Adminstriation/2.5 Automatisation des tâches.md",
-    "docs/02 TP Adminstriation/2.4 - TP Logging & journalisation.md",
-    "docs/02 TP Adminstriation/2.3 Configuration du réseau.md",
-    "docs/02 TP Adminstriation/2.99 - Utilitaire de configuration Alpine Linux.md",
     "overrides/partials/sidebar.html",
     "overrides/partials/nav.html",
     "overrides/partials/footer.html",
@@ -293,20 +300,13 @@
     "Ressources",
     "docs/01 Installation/1.5 Configurer SSH.md",
     "docs/01 Installation/1.0 Création de la machine virtuelle.md",
-    "docs/01 Installation/1.3 Utilisateurs & groupes.md",
     "docs/01 Installation/1.4 Arborescence minimale.md",
     "docs/01 Installation/1.5 Outils minimun.md",
-    "docs/01 Installation/1.2 Configuration du réseau.md",
-    "docs/01 Installation/1.1 Installation.md",
-    "docs/index.md",
-    "site_docs/custom.css",
     "02 Guide d'adminstriation/2.1.1 Gestion des services avec OpenRC.md",
     "02 Guide d'adminstriation/2.1 Démarrage du système.md",
     "01 Installation/1.6 Configurer SSH.md",
     "01 Installation/1.4 Arborescence minimale.md",
     "02 Guide d'adminstriation/2.1.2 Les processus.md",
-    "02 Guide d'adminstriation/2.3 - Systèmes de fichiers.md",
-    "02 Guide d'adminstriation/2.5 - Logging & journalisation.md",
     "Ressources/1.0 Environnement TP labo-5.png",
     "Ressources/1.0 Environnement TP labo-5.png",
     "Ressources/1.0 Environnement TP labo-4.png",

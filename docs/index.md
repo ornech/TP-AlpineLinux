@@ -1,37 +1,47 @@
 ![[Ressources/00 - Présentation.png]]
-# Introduction au TP Alpine Linux
+# 🔹 Qu’est-ce qu’Alpine Linux ?
+ Alpine se définie comme une **distribution “orientée sécurité, légère et efficace”** 
 
-Alpine Linux est une distribution minimaliste, modulaire, pensée pour la sécurité.
+> [!cite] Orienté sécurité
+> La légèreté d’Alpine (peu de paquets, binaires minimaux) signifie **moins de composants potentiellement vulnérables** - > “moins de surface = moins de risques potentiels”
 
-Ce cours/TP couvre :
-- installation de la distribution,
-- configuration réseau,
-- compréhension et usage d’OpenRC,
-- gestion des paquets (apk),
-- sécurisation SSH,
-- gestion des services,
-- permissions, utilisateurs, logs système,
-- outils systèmes indispensables.
+> [!cite] Légère
+>  La base minimale d’Alpine tient en **quelques mégaoctets** pour un conteneur, ou environ **130 Mo** pour une installation minimale sur disque. ([alpinelinux.org](https://alpinelinux.org/about/?utm_source=chatgpt.com "About"))
 
-Objectif global :
-→ comprendre un système Unix minimal, lisible, contrôlable et prévisible.
+> [!cite] Efficace
+> L’installation d’Alpine Linux est l’une des plus rapides qui existent.  le système s’installe en quelques secondes,  et l’ensemble du processus (paramétrage interactif inclus) prend à peine 1 à 2 minutes contre 20 à 30 minutes pour un Ubuntu Server.
 
+Alpine Linux s'appuie sur : 
+ 1.  OpenRC comme système d’initialisation. 
+ 2. un gestionnaire de paquets propriétaire : APK (Alpine Package Keeper)
+ 3. BusyBox comme ensemble d’outils système “all-in-one” (ls, cp, ps, adduser, etc.)
+ 4.  musl libc comme bibliothèque standard C. (au lieu de glibc)
 
-> [!NOTE] Mais pourquoi Alpine Linux ?
-> Voici un constat simple : plus un système accumule de fonctionnalités dans un même ensemble logiciel, plus il devient complexe et difficile à maîtriser. La tradition Unix repose sur un principe clair : un composant = une fonction, et il doit la faire correctement.
-> 
-> Depuis quelques années pourtant, certaines distributions Linux s’éloignent de cette approche en adoptant des composants beaucoup plus larges, intégrant plusieurs rôles autrefois séparés. C’est la logique du “gros service qui s’occupe de tout”, comparable au fonctionnement des instances de svchost.exe sous Windows, qui hébergent plusieurs services essentiels dans la même infrastructure.
-> 
-> Dans les distributions basées sur Debian, cette centralisation se manifeste surtout à travers systemd, dont la base de code atteint environ 1,3 million de lignes. Ce qui était à l’origine un outil d’initialisation du système s’est progressivement s’étendre à la gestion des logs (journald), réseau, DNS (resolved), sessions, timers, montages, règles de sandboxing, et bien d’autres aspects du système. Autrement dit, une quantité importante de fonctions critiques dépend désormais d’un même ensemble logiciel, fortement interconnecté.
-> 
-> Cette centralisation a un effet direct : la surface d’attaque augmente. Plus un composant gère de domaines, plus les points d’entrée potentiels se multiplient. Et, sans surprise, plusieurs vulnérabilités sérieuses ont été découvertes dans différents sous-composants de systemd (journald, networkd, resolved). Comme il s’agit du cœur de l’infrastructure d’initialisation, une faille dans un de ces modules peut avoir des répercussions bien plus larges que si chacune de ces fonctions était assurée par des outils Unix distincts.
-> 
-> À l’inverse, les systèmes qui appliquent strictement la philosophie “un processus = une fonctionnalité” conservent une surface d’attaque plus réduite et surtout mieux compartimentée. Une vulnérabilité touche alors un outil isolé, sans provoquer d’effet domino. En d'autres termes, un bug dans un composant ne compromet pas tout le système.
-> 
-> C’est exactement pour cette raison que nous allons étudier **Alpine Linux.**
-> 
-> **Alpine est une distribution qui applique strictement une philosophie minimaliste et modulaire : pas de services inutiles, pas de composants géants, pas d’empilements opaques. C’est un excellent exemple de système Unix moderne, simple, lisible et conçu pour réduire la surface d’attaque.
-> 
-> En d’autres termes, Alpine active presque rien par défaut — et c’est précisément ce qui le rend intéressant. On ne se retrouve pas avec des démons lancés automatiquement, des sous-composants dont on ignore l’existence, ou des services qui tournent en arrière-plan sans qu’on les ait explicitement installés.
-> 
-> En gros seul ce que vous activez fonctionnera, rien d’autre...**
+##  Points forts d’Alpine Linux
+
+| Avantage                                                    | Pourquoi / Comment                                                                                                                                                                                                                                               |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Très faible empreinte mémoire / disque**                  | Grâce à musl + BusyBox + APK minimaliste, une installation minimale reste très légère, adaptée aux serveurs, conteneurs, systèmes embarqués. ([alpinelinux.org](https://alpinelinux.org/about/?utm_source=chatgpt.com "About"))                                  |
+| **Simplicité et contrôle**                                  | Chaque paquet est minimal, ce qui permet de n’installer que ce qui est nécessaire : le système reste “propre”, clair, prévisible. ([alpinelinux.org](https://alpinelinux.org/about/?utm_source=chatgpt.com "About"))                                             |
+| **Sécurité par défaut**                                     | Les exécutables sont compilés comme des “position-independent executables” (PIE), avec protections “stack-smashing”, ce qui réduit le risque d’exploits mémoire. ([Wikipédia](https://en.wikipedia.org/wiki/Alpine_Linux?utm_source=chatgpt.com "Alpine Linux")) |
+| **Adapté aux conteneurs / microservices / systèmes légers** | Sa légèreté et modularité en font une base très prisée pour les conteneurs Docker, LXC, systèmes embarqués ou serveurs minimalistes.                                                                                                                             |
+| **Liberté de configuration / modularité**                   | Package split, pas d’installer “tout d’un coup” : l’administrateur contrôle exactement ce qui entre dans l’image ou l’installation. ([alpinelinux.org](https://alpinelinux.org/about/?utm_source=chatgpt.com "About"))                                           |
+## Alpine Linux, pour quel usage ?
+
+###  Un excellent choix 
+- Conteneurs Docker / LXC / microservices
+- Serveurs minimalistes
+- Systèmes embarqués ou ressources limitées
+- Environnements de tests, sandboxes, bastions
+- Enseignement/pratique Linux minimal — idéal pour voir “ce qui se passe réellement
+
+### Oui mais ...
+- Logiciels lourds ou propriétaires  par toujours compatible (musl libc VS glibc)
+- Station de travail bureautique ou “desktop linux”
+
+> [!note] Alpine Linux ->  Petit · Simple · Secure
+> - Minimaliste, conçu autour de musl + BusyBox + OpenRC
+> - Très léger, rapide, facile à contrôler
+> - Sécurité renforcée par construction (PIE, stack-smashing)
+> - Excellent pour serveurs, conteneurs, systèmes légers
+> - Mais moins bien pour compatibilité logicielle ou usage desktop “tout-venant”
