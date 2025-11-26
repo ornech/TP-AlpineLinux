@@ -1,18 +1,157 @@
+/* ============================================================
+   STYLE GLOBAL - amélioration du rendu visuel général
+   ============================================================ */
+
+/* Fond général doux et moderne */
 body {
-    --primary: #004080;
-    --secondary: #e6f0ff;
+    background: #eef1f5 !important;
 }
 
-.navbar-default {
-    background-color: var(--primary);
-    border-color: var(--primary);
+/* Conteneur principal (contient le texte) */
+.wy-nav-content,
+.rst-content {
+    background: #ffffff !important;
+    padding: 2rem !important;
+    border-radius: 10px;
+    max-width: 1100px;
+    margin: auto !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav>li>a {
-    color: white !important;
+/* Meilleur espacement interne */
+.rst-content p,
+.rst-content ul,
+.rst-content ol {
+    line-height: 1.6;
+    font-size: 16px;
 }
 
-.sidebar {
-    background: #f8f9fa;
+/* ============================================================
+   TITRES - style plus moderne
+   ============================================================ */
+
+h1 {
+    font-weight: 700;
+    font-size: 2.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0d2f6d;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: .4rem;
+    margin-top: 2rem;
+    color: #1a3355;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    color: #23395b;
+}
+
+
+/* ============================================================
+   NAVBAR / SIDEBAR - modernisation
+   ============================================================ */
+
+/* Bandeau supérieur (header) */
+.wy-nav-top {
+    background-color: #0d6efd !important;
+    /* Bleu Bootstrap élégant */
+}
+
+/* Sidebar à gauche (navigation) */
+.wy-nav-side {
+    background-color: #0f1b33 !important;
+    /* Bleu nuit */
+}
+
+/* Liens dans la sidebar */
+.wy-menu-vertical a {
+    font-size: 15px;
+}
+
+/* Highlight du lien actif */
+.wy-menu-vertical li.current>a {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-left: 4px solid #0d6efd !important;
+}
+
+
+/* ============================================================
+   AMÉLIORATION DES ADMONITIONS (!!! note, warning, etc.)
+   ============================================================ */
+
+div.admonition,
+.admonition {
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Titre de l'admonition */
+.admonition-title {
+    font-weight: 600 !important;
+    margin-bottom: .5rem !important;
+}
+
+/* ============================================================
+   BLOCS DE CODE - style propre et lisible
+   ============================================================ */
+
+code,
+pre {
+    font-size: 14px !important;
+}
+
+pre {
+    border-radius: 6px !important;
+    padding: 1rem !important;
+    background-color: #1e1e1e !important;
+    /* fond sombre VSCode */
+    color: #e5e5e5 !important;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Code inline */
+code {
+    background: #f0f2f5;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+
+/* ============================================================
+   TABLEAUX
+   ============================================================ */
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+table th,
+table td {
+    border: 1px solid #d4d4d4;
+    padding: 8px 12px;
+}
+
+table th {
+    background: #e8eef7;
+    font-weight: 600;
+}
+
+
+/* ============================================================
+   IMAGES - centrage automatique
+   ============================================================ */
+
+.rst-content img {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 90%;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }

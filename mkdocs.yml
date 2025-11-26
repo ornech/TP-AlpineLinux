@@ -2,27 +2,35 @@ site_name: TP Alpine Linux
 site_description: Documentation du TP Alpine Linux
 site_url: https://ornech.github.io/TP-AlpineLinux/
 
-docs_dir: site_docs
+docs_dir: site_docs        # Dossier généré après conversion Obsidian
 site_dir: site
-repo_url: https://github.com/ornech/TP-AlpineLinux
-edit_uri: edit/master/docs/
 
+repo_url: https://github.com/ornech/TP-AlpineLinux
+# edit_uri: edit/master/docs/     # Dossier source réel à éditer
+edit_uri: issues/new?title=Problème%20sur%20la%20page:%20%s&body=Merci%20de%20décrire%20le%20problème.%0A%0APage:%20%s
 
 theme:
   name: mkdocs
-  theme: superhero
+  theme: cyborg
   locale: fr
+  highlightjs: true # tester la coloration syntaxique avec Highlight.js
 
 plugins:
   - search
   - awesome-pages
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - minify:
+      minify_html: true
 
 markdown_extensions:
   - admonition
   - toc:
       permalink: true
   - fenced_code
-  - codehilite
+  - codehilite:
+      guess_lang: false
+      pygments_style: monokai
   - tables
   - footnotes
   - def_list
