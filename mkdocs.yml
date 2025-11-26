@@ -5,12 +5,12 @@ site_url: https://ornech.github.io/TP-AlpineLinux/
 docs_dir: site_docs
 site_dir: site
 repo_url: https://github.com/ornech/TP-AlpineLinux
-edit_uri: edit/master/site_docs/
+edit_uri: edit/master/docs/
 
 
 theme:
   name: mkdocs
-  theme: flatly
+  theme: superhero
   locale: fr
 
 plugins:
