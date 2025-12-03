@@ -1,0 +1,246 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+.checkbox-btn {
+	position: relative;
+    top: 2px;
+    left: 3px;
+}
+
+.checkbox-btn-disabled {
+	background: #343434;
+	border: 1px solid #343434 !important;
+}
+
+.checkbox-btn-disabled:hover {
+	border: 1px solid #343434;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 32px;
+	text-decoration: none;
+}
+
+.link-row {
+	margin-top: 5px;
+}
+
+.link-row button {
+	margin-right: 5px;
+	width: 5px;
+    height: auto;
+}
+
+.generate-md-note-btn {
+	margin-top: 5px;
+}
+
+.link-not-exist {
+	color: rgb(98, 78, 159);
+	text-decoration: none;
+}
+
+.link-incomplete {
+	color: #8c6f20;
+	margin-right: 5px;
+}
+
+/* pretty menu */
+.tree-menu ul {
+	padding-left: 0px;
+}
+  
+.tree-menu ul li {
+	list-style-type: none;
+	padding-left: 25px;
+	position: relative;
+	line-height: 2em;
+	left: 50px;
+}
+
+.tree-menu ul li:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0 0 0 0px;
+	height: 100%;
+}
+
+.tree-menu ul li:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 1em;
+	left: 0px;
+	border-top: 1px solid #ccc;
+	border-radius: 0px 0 0 0;
+	width: 20px;
+	height: 100%;
+}
+
+.tree-menu ul li:last-of-type:before {
+	height: 1em;
+}
+
+.strikethrough {
+	text-decoration: line-through;
+}
+
+.link {
+	margin-left: 5px;
+}
+
+.inline {
+	font-style: italic;
+}
+
+.slide-row {
+	line-height: 3.5em;
+}
+
+.row-right {
+	float: right;
+}
+
+.row-spacy {
+	margin-bottom: 15px;
+}
+
+.bold { 
+	font-weight: bold;
+}
+
+.error-icon {
+	margin-right: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.warning-icon, .not-found-icon {
+	margin-left: 5px;
+	position: relative;
+    top: 7px;
+}
+
+/* Tooltip container */
+.tooltip-parent:hover .tooltip-container {
+	display: block;
+}
+
+.tooltip-container {
+	display: none;
+	position: absolute;
+	top: -15px;
+	left: 75px;
+
+	animation: pop-down 200ms forwards ease-in-out;
+    box-shadow: 0 2px 8px var(--background-modifier-box-shadow);
+    background-color: var(--background-modifier-message);
+    border-radius: var(--radius-s);
+    color: #FAFAFA;
+    font-size: var(--font-ui-smaller);
+    font-weight: var(--font-medium);
+    line-height: var(--line-height-tight);
+    max-width: 300px;
+    padding: 4px 8px;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: var(--layer-tooltip);
+    pointer-events: none;
+    white-space: pre-wrap;
+    word-break: normal;
+    overflow-wrap: anywhere;
+}
+
+h3 {
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+
+.insert-with-checkbox {
+	margin-bottom: 15px;
+}
+
+.disabled-text {
+	color: #cfcfcf7d;
+}
+
+.disabled-text * {
+	text-decoration: none;
+	color: #cfcfcf7d;
+}
+
+.toolbar {
+	width: 100%;
+	display: flex;
+}
+
+.subbar {
+	width: 100%;
+	display: flex;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.generate-markdown-tab-btn {
+	width: 50%;
+}
+
+.generate-markdown-tab-btn button {
+	width: 95%}
+
+.generate-latex-tab-btn {
+	width: 50%;
+}
+
+.generate-latex-tab-btn button{
+	width: 95%;
+	float: right;
+}
+
+.generate-markdown-btn {
+	width: 33%;
+	margin-right: 15px;
+}
+
+.generate-slides-btn {
+	width: 33%;
+}
+
+.generate-plain-latex-btn {
+	width: 33%;
+	margin-right: 15px;
+}
+
+.generate-template-latex-btn {
+	width: 40%;
+}
+
+.generate-final-btn {
+	background-color: #8a5cf5 !important;
+	color: #dadada;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 50%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expandable-section-hidden {
+	display: none;
+}
+
+.expandable-section-visible {
+	display: block;
+}

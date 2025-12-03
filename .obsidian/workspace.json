@@ -83,7 +83,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02 TP Adminstriation/2.3b Gestion des droits.md",
+                "file": "docs/02 TP Adminstriation/Gestion des droits/2.3b Gestion des droits.md",
                 "mode": "source",
                 "source": false
               },
@@ -97,16 +97,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01 Installation/1.5 Configurer SSH.md",
+                "file": "docs/02 TP Adminstriation/2.3b Gestion des droits.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.5 Configurer SSH"
+              "title": "2.3b Gestion des droits"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -259,13 +259,23 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "90b0e7f67d360970",
+            "type": "leaf",
+            "state": {
+              "type": "view-notes-merger",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Notes Merger"
+            }
           }
         ],
         "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 372.5
+    "width": 476.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -277,57 +287,58 @@
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
       "bases:Create new base": true,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "notes-merger:Notes Merger": false
     }
   },
-  "active": "6b9de0605db680d7",
+  "active": "90b0e7f67d360970",
   "lastOpenFiles": [
     "docs/02 TP Adminstriation/2.3c TP Lan ARENA.md",
     "docs/02 TP Adminstriation/2.3b Gestion des droits.md",
-    "docs/02 TP Adminstriation/2.3a Gestion utilisateurs et groupes.md",
-    "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
-    "docs/02 TP Adminstriation/2.1 Les services avec OpenRC.md",
-    "docs/01 Installation/1.5 Configurer SSH.md",
-    "docs/01 Installation/1.4 Arborescence minimale.md",
-    "docs/01 Installation/1.3 Utilisateurs & groupes.md",
-    "docs/01 Installation/1.2 Configuration du réseau.md",
-    "docs/01 Installation/1.1 Installation.md",
-    "docs/01 Installation/1.0 Création de la machine virtuelle.md",
+    "archives/Gestion des droits/2.3b Gestion des droits.md",
+    "archives/Gestion des droits/2.3c Introduction aux droits POSIXSans titre.md",
+    "archives/Gestion des droits/Comment l’interpréter ?.md",
+    "archives/Gestion des droits/Différence entre fichiers et dossiers.md",
+    "archives/Gestion des droits/Les droits POSIX.md",
+    "docs/Ressources/Droits - teste presta.png",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/0_Initialisation_Environnement/00_Présentation.md",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/2_Umask_Droits_Par_Defaut/20_Umask_Introduction.md",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/2_Umask_Droits_Par_Defaut/21_Umask_Pratiques.md",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/1_Droits_de_base/13_Synthese_Droits.md",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/1_Droits_de_base/12_Probleme_Visibilite.md",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/1_Droits_de_base/11_Probleme_Ecriture.md",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/1_Droits_de_base/10_Probleme_Acces_Dossiers.md",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/0_Initialisation_Environnement/02_Preparation_Dossiers.md",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/0_Initialisation_Environnement/01_Creation_Utilisateurs.md",
+    "archives/Gestion des droits/Cas conret/Etape 1.md",
+    "docs/02 TP Adminstriation/test/test.md",
+    "slideshow-templates/tpl-title.md",
+    "slideshow-templates/tpl-split.md",
+    "slideshow-templates/tpl-last.md",
+    "slideshow-templates/tpl-image.md",
+    "slideshow-templates/tpl-basic.md",
+    "slideshow-templates",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/undefined.md",
+    "docs/02 TP Adminstriation/test/undefined.md",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA-fusionné.md",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/7_Synthese_Finalisation",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/6_Challenge_Final",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/5_Mises_En_Situation_Reelles",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/4_Setgid_Travail_Equipe",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/3_Sticky_Bit_Dossiers_Publics",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/2_Umask_Droits_Par_Defaut",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/1_Droits_de_base",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/0_Initialisation_Environnement",
+    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA",
     "docs/Ressources/1.1 Installation.png",
-    "docs/Ressources/Pasted.md",
     "docs/Ressources/Pasted image 20251122091618.png",
-    "docs/02 TP Adminstriation/2.7 Automatisation des tâches.md",
-    "docs/02 TP Adminstriation/2.6 - TP Logging & journalisation.md",
-    "docs/02 TP Adminstriation/2.5 Configuration du réseau.md",
-    "docs/02 TP Adminstriation/2.4 Systèmes de fichiers.md",
-    "docs/03 Hardening (durcissement)/3.2 Sécurisation des répertoires HOME.md",
-    "docs/03 Hardening (durcissement)/3.1 SSH hardening.md",
-    "docs/03 Hardening (durcissement)/Comptes utilisateurs.md",
-    "docs/03 Hardening (durcissement)/Partitionnement.md",
-    "docs/02 TP Adminstriation/Services et OpenRC.md",
-    "docs/03 Hardening (durcissement)/Maintenance et mises à jour.md",
-    "docs/03 Hardening (durcissement)/Journalisation.md",
-    "docs/03 Hardening (durcissement)/Paramètres réseau.md",
-    "docs/03 Hardening (durcissement)/Paramètres système (sysctl).md",
-    "docs/03 Hardening (durcissement)/Permissions et fichiers sensibles.md",
-    "overrides/nav.html",
-    "overrides/sidebar.html",
-    "overrides/partials/sidebar.html",
-    "overrides/partials/nav.html",
-    "overrides/partials/footer.html",
-    "overrides/partials/2.2 - Gestion des paquets.html",
-    "overrides/partials",
-    "overrides",
-    "archives",
     "2025-11-26.canvas",
     "docs/Ressources/2.2 TP Les services avec OpenRC.png",
     "Ressources/2.2 Les services avec OpenRC.png",
-    "Ressources",
     "Ressources/1.0 Environnement TP labo-5.png",
     "Ressources/1.0 Environnement TP labo-5.png",
     "Ressources/1.0 Environnement TP labo-4.png",
     "Ressources/1.0 Environnement TP labo-3.png",
-    "Ressources/1.0 Environnement TP labo-2.png",
-    "Ressources/1.0 Environnement TP labo-1.png"
+    "Ressources/1.0 Environnement TP labo-2.png"
   ]
 }
