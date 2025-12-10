@@ -104,9 +104,23 @@
               "icon": "lucide-file",
               "title": "2.3b Gestion des droits"
             }
+          },
+          {
+            "id": "34c89d1d702d29a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/02 TP Adminstriation/2.3b Gestion des droits.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2.3b Gestion des droits"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -163,7 +177,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 359.5
+    "width": 200
   },
   "right": {
     "id": "00b1e3aa215a6797",
@@ -269,13 +283,33 @@
               "icon": "lucide-file",
               "title": "Notes Merger"
             }
+          },
+          {
+            "id": "ef067f34e083764f",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
+          },
+          {
+            "id": "7b9a69ba8f32d61a",
+            "type": "leaf",
+            "state": {
+              "type": "smart-lookup-view",
+              "state": {},
+              "icon": "smart-lookup",
+              "title": "Lookup"
+            }
           }
         ],
         "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 476.5
+    "width": 349.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -288,16 +322,21 @@
       "command-palette:Ouvrir la palette de commandes": false,
       "bases:Create new base": true,
       "obsidian-git:Open Git source control": false,
-      "notes-merger:Notes Merger": false
+      "notes-merger:Notes Merger": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Lookup: Open lookup view": false,
+      "smart-connections:Smart Connections: Open random connection": false
     }
   },
-  "active": "6748da64898f94e0",
+  "active": "34c89d1d702d29a3",
   "lastOpenFiles": [
+    "docs/Ressources/2.3b Gestion des droits.png",
+    "docs/02 TP Adminstriation/2.3b Gestion des droits.md",
+    "archives/2.1 Démarrage du système.md",
     "archives/Gestion des droits/2.3b Gestion des droits.md",
     "archives/Gestion des droits/2.3c Introduction aux droits POSIXSans titre.md",
     "archives/Gestion des droits/Les droits POSIX.md",
     "archives/Gestion des droits/Différence entre fichiers et dossiers.md",
-    "docs/02 TP Adminstriation/2.3b Gestion des droits.md",
     "docs/02 TP Adminstriation/2.3c TP Lan ARENA.md",
     "archives/Gestion des droits/Comment l’interpréter ?.md",
     "docs/Ressources/Droits - teste presta.png",
@@ -319,8 +358,6 @@
     "slideshow-templates/tpl-basic.md",
     "slideshow-templates",
     "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/undefined.md",
-    "docs/02 TP Adminstriation/test/undefined.md",
-    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA-fusionné.md",
     "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/7_Synthese_Finalisation",
     "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/6_Challenge_Final",
     "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/5_Mises_En_Situation_Reelles",
@@ -338,7 +375,6 @@
     "Ressources/1.0 Environnement TP labo-5.png",
     "Ressources/1.0 Environnement TP labo-5.png",
     "Ressources/1.0 Environnement TP labo-4.png",
-    "Ressources/1.0 Environnement TP labo-3.png",
-    "Ressources/1.0 Environnement TP labo-2.png"
+    "Ressources/1.0 Environnement TP labo-3.png"
   ]
 }
