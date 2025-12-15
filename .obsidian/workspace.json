@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02 TP Adminstriation/2.3b Gestion des utilisateurs & environnement.md",
+                "file": "docs/02 TP Adminstriation/2.3a Gestion utilisateurs et groupes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.3b Gestion des utilisateurs & environnement"
+              "title": "2.3a Gestion utilisateurs et groupes"
             }
           }
         ],
@@ -246,8 +246,8 @@
   },
   "active": "d90d271c00dd88bf",
   "lastOpenFiles": [
-    "docs/02 TP Adminstriation/2.3a Gestion utilisateurs et groupes.md",
     "docs/02 TP Adminstriation/2.3b Gestion des utilisateurs & environnement.md",
+    "docs/02 TP Adminstriation/2.3a Gestion utilisateurs et groupes.md",
     "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
     "docs/02 TP Adminstriation/2.3c Gestion des droits.md",
     "docs/02 TP Adminstriation/2.3d TP Lan ARENA.md",
