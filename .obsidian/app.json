@@ -1,5 +1,6 @@
 {
   "attachmentFolderPath": "docs/Ressources",
   "alwaysUpdateLinks": true,
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "readableLineLength": false
 }

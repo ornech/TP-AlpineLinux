@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "09172cf2b2a40c18",
+        "id": "ffdf33449dbfa11f",
         "type": "tabs",
         "children": [
           {
-            "id": "b63f18ea902343b8",
+            "id": "c88f884c63409b35",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5086555480957
+    "width": 200
   },
   "right": {
     "id": "00b1e3aa215a6797",
@@ -210,7 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -229,14 +229,16 @@
       "smart-connections:Smart Connections: Open random connection": false
     }
   },
-  "active": "b63f18ea902343b8",
+  "active": "c88f884c63409b35",
   "lastOpenFiles": [
+    "docs/02 TP Adminstriation/2.3b Gestion des utilisateurs & environnement.md",
+    "docs/02 TP Adminstriation/10 Gestion des droits avancés.md",
+    "docs/02 TP Adminstriation/2.99 - Utilitaire de configuration Alpine Linux.md",
     "docs/styles.css",
     "docs/2.3b Gestion des utilisateurs & environnement.css",
     "site_docs/styles.css",
     "docs/02 TP Adminstriation/2.3a Gestion utilisateurs et groupes.md",
     "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
-    "docs/02 TP Adminstriation/2.3b Gestion des utilisateurs & environnement.md",
     "docs/02 TP Adminstriation/2.3c Gestion des droits.md",
     "docs/02 TP Adminstriation/2.3d TP Lan ARENA.md",
     "docs/02 TP Adminstriation/2.5 Configuration du réseau.md",
@@ -244,7 +246,6 @@
     "docs/02 TP Adminstriation/2.1 Les services avec OpenRC.md",
     "docs/01 Installation/1.4 Arborescence minimale.md",
     "docs/02 TP Adminstriation/Services et OpenRC.md",
-    "docs/02 TP Adminstriation/2.99 - Utilitaire de configuration Alpine Linux.md",
     "docs/02 TP Adminstriation/2.8 Automatisation des tâches.md",
     "docs/02 TP Adminstriation/2.6 - TP Logging & journalisation.md",
     "docs/02 TP Adminstriation/2.5 Systèmes de fichiers.md",
@@ -268,7 +269,6 @@
     "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/4_Setgid_Travail_Equipe",
     "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/3_Sticky_Bit_Dossiers_Publics",
     "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/2_Umask_Droits_Par_Defaut",
-    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/1_Droits_de_base",
     "docs/Ressources/1.1 Installation.png",
     "docs/Ressources/Pasted image 20251122091618.png",
     "2025-11-26.canvas",
