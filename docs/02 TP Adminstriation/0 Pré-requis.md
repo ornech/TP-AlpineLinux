@@ -13,7 +13,7 @@ Votre mission : **rattraper le carnage et surtout faire croire à la direction q
 
 Bienvenue chez CorpTech !!!
 
-MAis avant de commencer copier ce script et lancez le sur machine Alpine.
+Mais avant de commencer  ce script sur machine Alpine.
 
 ```sh
 #!/bin/sh
