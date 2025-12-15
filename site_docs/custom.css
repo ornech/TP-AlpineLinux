@@ -155,3 +155,51 @@ table th {
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
+
+/* Admonitions MkDocs : ajouter une icône devant le titre */
+.admonition > .admonition-title::before {
+  display: inline-block;
+  width: 1.4em;
+  margin-right: .35em;
+}
+
+/* Types courants */
+.admonition.note > .admonition-title::before,
+.admonition.info > .admonition-title::before {
+  content: "ℹ️";
+}
+
+.admonition.tip > .admonition-title::before {
+  content: "💡";
+}
+
+.admonition.warning > .admonition-title::before,
+.admonition.attention > .admonition-title::before {
+  content: "⚠️";
+}
+
+.admonition.danger > .admonition-title::before,
+.admonition.error > .admonition-title::before {
+  content: "⛔";
+}
+
+.admonition.success > .admonition-title::before {
+  content: "✅";
+}
+
+.admonition.failure > .admonition-title::before {
+  content: "❌";
+}
+
+.admonition.question > .admonition-title::before {
+  content: "❓";
+}
+
+.admonition.example > .admonition-title::before {
+  content: "🧪";
+}
+
+.admonition.abstract > .admonition-title::before {
+  content: "📝";
+}
+
