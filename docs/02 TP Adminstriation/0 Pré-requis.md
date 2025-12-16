@@ -1,19 +1,18 @@
 # 0 Pré-requis
-**🎉 Félicitations !**  
-Vous venez d’être embauchés comme admin système chez **CorpTech**, une entreprise  _à la pointe de l’innovation informatique_… 
 
-Dès votre arrivée, la direction vous confie la gestion du serveur de fichiers.  
-En discutant avec vos nouveaux collègues, vous découvrez que son installation a été sous-traitée à une société **low-cost** — dirigée, semble-t-il, par le cousin du patron… un incompétent notoire.
+> [!cite] **🎉 Félicitations !**  
+> Vous venez d’être embauché comme admin système chez **CorpTech**, une entreprise  _à la pointe de l’innovation informatique_… 
+> 
+> Dès votre arrivée, la direction vous confie la gestion du nouveau serveur de fichiers.  
+> En discutant à la machine café, vous découvrez que la mise en production de ce serveur a été sous-traitée à une société - dirigée, semble-t-il, par le cousin du patron… un incompétent notoire aux dires de certains employés qui hésitent encore entre rire ou pleurer.
+> 
+> Mais heureusement, c’est désormais **votre** problème !!!
+> 
+> Votre mission : **rattraper le carnage et surtout faire croire à la direction que tout était prévu.**
+> 
+> Bienvenue chez CorpTech !!!
+> 
 
-Résultat : tout est a refaire,  la restriction des droits est absurde, les dossiers sont accessibles comme un hall de gare et l'organisation des dossier est si chaotique qu’on hésite entre en rire ou pleurer.
-
-Heureusement, c’est désormais **votre** problème.
-
-Votre mission : **rattraper le carnage et surtout faire croire à la direction que tout était prévu.**
-
-Bienvenue chez CorpTech !!!
-
-Mais avant de commencer  ce script sur machine Alpine.
 
 ```sh
 #!/bin/sh

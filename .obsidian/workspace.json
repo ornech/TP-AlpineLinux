@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02 TP Adminstriation/2.3b Gestion des utilisateurs & environnement.md",
+                "file": "docs/02 TP Adminstriation/2.5 Systèmes de fichiers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.3b Gestion des utilisateurs & environnement"
+              "title": "2.5 Systèmes de fichiers"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 361.5
   },
   "right": {
     "id": "00b1e3aa215a6797",
@@ -210,7 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 488.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,26 +231,27 @@
   },
   "active": "c88f884c63409b35",
   "lastOpenFiles": [
+    "docs/02 TP Adminstriation/2.5 Configuration du réseau.md",
+    "docs/02 TP Adminstriation/2.5 Systèmes de fichiers.md",
+    "docs/02 TP Adminstriation/2.3d TP Lan ARENA.md",
+    "docs/02 TP Adminstriation/2.3c Gestion des droits.md",
     "docs/02 TP Adminstriation/2.3b Gestion des utilisateurs & environnement.md",
+    "docs/02 TP Adminstriation/2.3a Gestion utilisateurs et groupes.md",
+    "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
+    "docs/02 TP Adminstriation/2.1 Les services avec OpenRC.md",
+    "docs/02 TP Adminstriation/0 Pré-requis.md",
+    "docs/index.md",
+    "docs/01 Installation/1.1 Installation.md",
+    "docs/01 Installation/1.0 Création de la machine virtuelle.md",
     "docs/02 TP Adminstriation/10 Gestion des droits avancés.md",
     "docs/02 TP Adminstriation/2.99 - Utilitaire de configuration Alpine Linux.md",
     "docs/styles.css",
     "docs/2.3b Gestion des utilisateurs & environnement.css",
     "site_docs/styles.css",
-    "docs/02 TP Adminstriation/2.3a Gestion utilisateurs et groupes.md",
-    "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
-    "docs/02 TP Adminstriation/2.3c Gestion des droits.md",
-    "docs/02 TP Adminstriation/2.3d TP Lan ARENA.md",
-    "docs/02 TP Adminstriation/2.5 Configuration du réseau.md",
-    "docs/02 TP Adminstriation/0 Pré-requis.md",
-    "docs/02 TP Adminstriation/2.1 Les services avec OpenRC.md",
     "docs/01 Installation/1.4 Arborescence minimale.md",
     "docs/02 TP Adminstriation/Services et OpenRC.md",
     "docs/02 TP Adminstriation/2.8 Automatisation des tâches.md",
     "docs/02 TP Adminstriation/2.6 - TP Logging & journalisation.md",
-    "docs/02 TP Adminstriation/2.5 Systèmes de fichiers.md",
-    "docs/01 Installation/1.1 Installation.md",
-    "docs/01 Installation/1.0 Création de la machine virtuelle.md",
     "docs/01 Installation/1.5 Configurer SSH.md",
     "docs/Ressources/2.3b Gestion des droits.png",
     "archives/2.1 Démarrage du système.md",
@@ -261,7 +262,6 @@
     "archives/Gestion des droits/Comment l’interpréter ?.md",
     "docs/Ressources/Droits - teste presta.png",
     "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/0_Initialisation_Environnement/00_Présentation.md",
-    "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/2_Umask_Droits_Par_Defaut/20_Umask_Introduction.md",
     "slideshow-templates",
     "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/7_Synthese_Finalisation",
     "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/6_Challenge_Final",

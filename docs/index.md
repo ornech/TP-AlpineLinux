@@ -45,3 +45,12 @@ Alpine Linux s'appuie sur :
 > - Sécurité renforcée par construction (PIE, stack-smashing)
 > - Excellent pour serveurs, conteneurs, systèmes légers
 > - Mais moins bien pour compatibilité logicielle ou usage desktop “tout-venant”
+
+
+---
+**Auteur :** J-F Ornech 
+**Formation :** BTS SIO – SISR  
+**Établissement :** Lycée Merleau-Ponty
+Année : 2025–2026
+
+---
