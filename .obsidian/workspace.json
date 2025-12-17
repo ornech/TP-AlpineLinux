@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02 TP Adminstriation/2.5 Systèmes de fichiers.md",
+                "file": "docs/02 TP Adminstriation/2.4 Systèmes de fichiers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.5 Systèmes de fichiers"
+              "title": "2.4 Systèmes de fichiers"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 361.5
+    "width": 278.5
   },
   "right": {
     "id": "00b1e3aa215a6797",
@@ -210,7 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 488.5
+    "width": 300.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,14 +231,14 @@
   },
   "active": "c88f884c63409b35",
   "lastOpenFiles": [
-    "docs/02 TP Adminstriation/2.5 Configuration du réseau.md",
-    "docs/02 TP Adminstriation/2.5 Systèmes de fichiers.md",
-    "docs/02 TP Adminstriation/2.3d TP Lan ARENA.md",
-    "docs/02 TP Adminstriation/2.3c Gestion des droits.md",
+    "docs/02 TP Adminstriation/2.4.1 TP Lan ARENA.md",
+    "docs/02 TP Adminstriation/2.4 Systèmes de fichiers.md",
     "docs/02 TP Adminstriation/2.3b Gestion des utilisateurs & environnement.md",
+    "docs/02 TP Adminstriation/2.3c Gestion des droits.md",
     "docs/02 TP Adminstriation/2.3a Gestion utilisateurs et groupes.md",
     "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
     "docs/02 TP Adminstriation/2.1 Les services avec OpenRC.md",
+    "docs/02 TP Adminstriation/2.5 Configuration du réseau.md",
     "docs/02 TP Adminstriation/0 Pré-requis.md",
     "docs/index.md",
     "docs/01 Installation/1.1 Installation.md",
