@@ -1,22 +1,3 @@
-# 0 Pré-requis
-
-> [!cite] **🎉 Félicitations !**  
-> Vous venez d’être embauché comme admin système chez **CorpTech**, une entreprise  _à la pointe de l’innovation informatique_… 
-> 
-> Dès votre arrivée, la direction vous confie l’administration du nouveau serveur de fichiers.  
-> En discutant à la machine café, vous découvrez que la mise en production de ce serveur a va être sous-traitée à une société - dirigée, semble-t-il, par le cousin du patron… un incompétent notoire aux dires de certains employés qui hésitent encore entre rire ou pleurer.
-> 
-> Mais heureusement, vous êtes là  !!!
-> 
-> Bienvenue chez CorpTech !!!
-> 
-
-Mais avant de commencer, la Direction de **CorpTech** vous encourage et insiste pour que vous lanciez ce script sur votre nouveau serveur ... 
-su - root
-apk add curl
-
-
-```sh
 #!/bin/sh
 # Initialisation de l'env TP Alpine Linux
 
@@ -135,12 +116,3 @@ chmod 777 /srv/backup_admins/sauvegarde_home_admin1.tar.gz
 
 echo "=== L'environnement massacré par le prestataire est prêt ==="
 echo "=== La direction vous remercie === "
-```
-
-Rappel d’usage :
-
-```sh
-su - root
-nano env.sh      # coller le script, CTRL+s CTRL+x 
-sh env.sh
-```
