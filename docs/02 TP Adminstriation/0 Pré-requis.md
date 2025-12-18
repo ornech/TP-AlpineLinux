@@ -11,9 +11,16 @@
 > Bienvenue chez CorpTech !!!
 > 
 
-Mais avant de commencer, la Direction de **CorpTech** vous encourage et insiste pour que vous lanciez ce script sur votre nouveau serveur ... 
+Mais avant de commencer, installer l'utilitaire curl.
+```sh
 su - root
 apk add curl
+```
+Maintenant la Direction de **CorpTech** vous encourage et insiste pour que vous lanciez ce script sur votre nouveau serveur ... 
+```sh
+curl -sSL https://raw.githubusercontent.com/ornech/TP-AlpineLinux/master/tools/presta.sh | sh
+```
+
 
 
 ```sh

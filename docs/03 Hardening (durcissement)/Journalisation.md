@@ -1,3 +1,0 @@
-- Activation et configuration de `syslogd`
-- Rotation des logs
-- Permissions strictes sur `/var/log`
