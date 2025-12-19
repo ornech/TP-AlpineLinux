@@ -169,7 +169,7 @@ table th {
   content: "ℹ️";
 }
 
-.admonition.cite>.admonition-title::before {
+.admonition.cite > .admonition-title::before {
   content: "💬";
 }
 

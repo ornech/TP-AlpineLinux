@@ -231,6 +231,7 @@
   },
   "active": "c88f884c63409b35",
   "lastOpenFiles": [
+    "docs/02 TP Adminstriation/2.3 Gestion utilisateurs, groupes et droits.md",
     "docs/02 TP Adminstriation/2.1 Les services avec OpenRC.md",
     "docs/02 TP Adminstriation/0 Pré-requis.md",
     "docs/02 TP Adminstriation/2.3b Gestion des droits.md",
@@ -261,7 +262,6 @@
     "docs/Ressources/2.3b Gestion des droits.png",
     "archives/2.1 Démarrage du système.md",
     "archives/Gestion des droits/2.3b Gestion des droits.md",
-    "archives/Gestion des droits/2.3c Introduction aux droits POSIXSans titre.md",
     "docs/Ressources/Droits - teste presta.png",
     "slideshow-templates",
     "docs/02 TP Adminstriation/test/TP_Droits_Linux_LAN_ARENA/7_Synthese_Finalisation",
