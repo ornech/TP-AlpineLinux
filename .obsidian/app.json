@@ -2,5 +2,6 @@
   "attachmentFolderPath": "docs/Ressources",
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
-  "readableLineLength": false
+  "readableLineLength": false,
+  "showLineNumber": true
 }

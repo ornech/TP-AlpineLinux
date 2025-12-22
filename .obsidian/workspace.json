@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c88f884c63409b35",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/01 Installation/1.2 Configuration du réseau.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1.2 Configuration du réseau"
-            }
-          },
-          {
             "id": "a299f3de42724df0",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "2.8 Logging & journalisation"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -246,12 +231,12 @@
   },
   "active": "a299f3de42724df0",
   "lastOpenFiles": [
-    "archives/2.8 Logging & journalisation.md",
+    "docs/02 TP Adminstriation/2.7 Configuration du réseau.md",
     "docs/02 TP Adminstriation/2.8 Logging & journalisation.md",
+    "docs/01 Installation/1.2 Configuration du réseau.md",
+    "archives/2.8 Logging & journalisation.md",
     "docs/Ressources/2.8 v2 Logging & journalisation.png",
     "docs/02 TP Adminstriation/2.1 Les services avec OpenRC.md",
-    "docs/02 TP Adminstriation/2.7 Configuration du réseau.md",
-    "docs/01 Installation/1.2 Configuration du réseau.md",
     "docs/02 TP Adminstriation/2.999 - Utilitaire de configuration Alpine Linux.md",
     "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
     "docs/02 TP Adminstriation/2.3 Gestion utilisateurs et groupes.md",
