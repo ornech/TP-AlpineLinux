@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02 TP Adminstriation/2.8 Logging & journalisation.md",
+                "file": "docs/02 TP Adminstriation/V2 - 2.2 Gestion des paquets.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.8 Logging & journalisation"
+              "title": "V2 - 2.2 Gestion des paquets"
             }
           }
         ]
@@ -231,23 +231,27 @@
   },
   "active": "a299f3de42724df0",
   "lastOpenFiles": [
+    "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
+    "docs/02 TP Adminstriation/V2 - 2.2 Gestion des paquets.md",
+    "docs/02 TP Adminstriation/2.1 Les services avec OpenRC.md",
+    "docs/01 Installation/1.2 Configuration du réseau.md",
+    "docs/01 Installation/1.1 Installation.md",
+    "docs/01 Installation/1.0 Création de la machine virtuelle.md",
+    "docs/02 TP Adminstriation/2.5 Ouverture de session & profil.md",
+    "docs/02 TP Adminstriation/2.4 Gestion des droits.md",
+    "docs/02 TP Adminstriation/2.3 Gestion utilisateurs et groupes.md",
+    "docs/index.md",
+    "docs/02 TP Adminstriation/2.9 Planification de tâches avec CRON.md",
+    "docs/02 TP Adminstriation/2.8 Logging & journalisation.md",
     "docs/Ressources/2.8 Logging & journalisation-1.png",
     "docs/Ressources/2.8 Logging & journalisation.png",
     "docs/02 TP Adminstriation/2.7 Configuration du réseau.md",
-    "docs/02 TP Adminstriation/2.8 Logging & journalisation.md",
-    "docs/01 Installation/1.2 Configuration du réseau.md",
     "archives/2.8 Logging & journalisation.md",
     "docs/Ressources/2.8 v2 Logging & journalisation.png",
-    "docs/02 TP Adminstriation/2.1 Les services avec OpenRC.md",
     "docs/02 TP Adminstriation/2.999 - Utilitaire de configuration Alpine Linux.md",
-    "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
-    "docs/02 TP Adminstriation/2.3 Gestion utilisateurs et groupes.md",
-    "docs/02 TP Adminstriation/2.5 Ouverture de session & profil.md",
     "docs/02 TP Adminstriation/2.6 Systèmes de fichiers.md",
-    "docs/02 TP Adminstriation/2.4 Gestion des droits.md",
     "docs/02 TP Adminstriation/2.0 Pré-requis.md",
     "docs/02 TP Adminstriation/2.991 Bonus TP Lan ARENA.md",
-    "docs/02 TP Adminstriation/2.9 Automatisation des tâches.md",
     "docs/02 TP Adminstriation/2.3 Gestion utilisateurs, groupes et droits.md",
     "archives/10 Gestion des droits avancés.md",
     "archives/03 Hardening (durcissement)/3.2 Sécurisation des répertoires HOME.md",
@@ -255,9 +259,6 @@
     "tools/presta.sh",
     "tools/presta.sh.md",
     "docs/02 TP Adminstriation/Services et OpenRC.md",
-    "docs/index.md",
-    "docs/01 Installation/1.1 Installation.md",
-    "docs/01 Installation/1.0 Création de la machine virtuelle.md",
     "docs/styles.css",
     "docs/2.3b Gestion des utilisateurs & environnement.css",
     "site_docs/styles.css",
@@ -276,7 +277,6 @@
     "2025-11-26.canvas",
     "docs/Ressources/2.2 TP Les services avec OpenRC.png",
     "Ressources/2.2 Les services avec OpenRC.png",
-    "Ressources/1.0 Environnement TP labo-5.png",
     "Ressources/1.0 Environnement TP labo-5.png"
   ]
 }
