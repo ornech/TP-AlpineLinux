@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02 TP Adminstriation/V2 - 2.2 Gestion des paquets.md",
+                "file": "docs/01 Installation/1.2 Configuration du réseau.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "V2 - 2.2 Gestion des paquets"
+              "title": "1.2 Configuration du réseau"
             }
           }
         ]
@@ -231,8 +231,8 @@
   },
   "active": "a299f3de42724df0",
   "lastOpenFiles": [
-    "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
     "docs/02 TP Adminstriation/V2 - 2.2 Gestion des paquets.md",
+    "docs/02 TP Adminstriation/2.2 Gestion des paquets.md",
     "docs/02 TP Adminstriation/2.1 Les services avec OpenRC.md",
     "docs/01 Installation/1.2 Configuration du réseau.md",
     "docs/01 Installation/1.1 Installation.md",
